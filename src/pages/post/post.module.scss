@@ -1,1 +1,85 @@
-// TODO
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding: 0 2rem;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+    & > div {
+      display: flex;
+      margin-top: 1.6rem;
+    }
+  }
+
+  h1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: 3.625rem;
+    letter-spacing: -0.5px;
+    color: #f8f8f8;
+  }
+
+  section {
+    p,
+    strong,
+    span {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: justify;
+      color: var(--body);
+      margin-bottom: 1rem;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    h2 {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 140%;
+      text-align: justify;
+      color: #f8f8f8;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.postInfo {
+  display: flex;
+  time,
+  span {
+    font-family: Inter;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: var(--info);
+    margin-left: 0.5rem;
+    display: block;
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+
+    & + div {
+      margin-left: 1.562rem;
+    }
+  }
+}

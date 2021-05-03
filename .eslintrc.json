@@ -80,7 +80,12 @@
         "allowExpressions": true
       }
     ],
-    "@typescript-eslint/camelcase": "off"
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "global-require": "off",
+    "react-native/no-raw-text": "off",
+    "no-param-reassign": "off",
+    "no-underscore-dangle": "off",
+    "no-console": ["error", { "allow": ["tron"] }]
   },
   "settings": {
     "react": {
